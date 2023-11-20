@@ -1,0 +1,10 @@
+{
+   "version": 2,
+   "name": "music-album",
+   "builds": [
+      { "src": "app.py", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/app.py" }
+   ]
+}
